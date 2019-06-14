@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ContractsController">
+   <children>
+      <TableView fx:id="tableContracts" layoutX="14.0" layoutY="126.0" prefHeight="800.0" prefWidth="1878.0">
+         <columns>
+            <TableColumn fx:id="id_contracts" prefWidth="75.0" text="#" />
+            <TableColumn fx:id="executor" prefWidth="98.0" text="Исполнитель" />
+            <TableColumn fx:id="subject_name" prefWidth="151.0" text="Название субъекта" />
+            <TableColumn fx:id="subject_tin" prefWidth="131.0" text="ИНН субъекта" />
+            <TableColumn fx:id="subject_email" prefWidth="142.0" text="Электронный адрес" />
+            <TableColumn fx:id="contract_details" prefWidth="150.0" text="Реквизиты договора" />
+            <TableColumn fx:id="subject_of_the_contract" prefWidth="153.0" text="Предмет договора" />
+            <TableColumn fx:id="contract_object" prefWidth="126.0" text="Объект договора" />
+            <TableColumn fx:id="case_status" prefWidth="123.0" text="Статус дела" />
+            <TableColumn fx:id="details_of_the_pretension" prefWidth="125.0" text="Реквизиты претензии" />
+            <TableColumn fx:id="pretension_date" prefWidth="75.0" text="Дата направления претензии" />
+            <TableColumn fx:id="payment_term" prefWidth="75.0" text="Срок уплаты" />
+            <TableColumn fx:id="amount_payable" prefWidth="75.0" text="Сумма к уплате" />
+            <TableColumn fx:id="state_of_pretension" prefWidth="75.0" text="Состояние претензии" />
+            <TableColumn fx:id="type_of_claim" prefWidth="75.0" text="Вид иска" />
+            <TableColumn fx:id="a_sign_of_special_importance" prefWidth="75.0" text="Признак особой важности" />
+            <TableColumn fx:id="the_claim_filing_date" prefWidth="75.0" text="Дата подачи иска" />
+            <TableColumn fx:id="outgoing_number" prefWidth="75.0" text="Исходящий номер" />
+            <TableColumn fx:id="state_of_claim" prefWidth="75.0" text="Состояние иска" />
+            <TableColumn fx:id="date_of_court_hearing" prefWidth="75.0" text="Дата судебного заседания" />
+            <TableColumn fx:id="court_name" prefWidth="75.0" text="Наименование суда" />
+            <TableColumn fx:id="court_number" prefWidth="75.0" text="Номер дела в суде" />
+            <TableColumn fx:id="full_name_of_judge" prefWidth="75.0" text="ФИО судьи" />
+            <TableColumn fx:id="meeting_stage" prefWidth="75.0" text="Стадия заседания" />
+            <TableColumn fx:id="the_courts_decision" prefWidth="75.0" text="Решение суда" />
+            <TableColumn fx:id="effective_date" prefWidth="75.0" text="Дата вступления в законную силу" />
+            <TableColumn fx:id="note" prefWidth="75.0" text="Примечание" />
+         </columns>
+      </TableView>
+      <TextField fx:id="searchfield" layoutX="1727.0" layoutY="46.0" onKeyTyped="#searchRecord" prefHeight="25.0" prefWidth="165.0" promptText="Поиск" />
+      <Button layoutX="14.0" layoutY="52.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="165.0" text="Редактировать дело" />
+      <Button layoutX="198.0" layoutY="52.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="165.0" text="Удалить дело" />
+   </children>
+</AnchorPane>

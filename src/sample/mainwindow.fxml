@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainWindowController">
+   <children>
+      <Button fx:id="contracts" layoutX="713.0" layoutY="206.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="187.0" text="Дела">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="createcontract" layoutX="401.0" layoutY="206.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="187.0" text="Создать дело">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="profile" layoutX="78.0" layoutY="206.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="187.0" text="Профиль">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

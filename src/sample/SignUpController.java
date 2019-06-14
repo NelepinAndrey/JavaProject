@@ -33,5 +33,25 @@ public class SignUpController {
     @FXML
     void initialize() {
 
+        loginSignUpButton.setOnAction(event -> {
+
+            signUpNewUser();
+
+        });
+    
+    }
+
+    private void signUpNewUser() {
+        loginSignUpButton.getScene().getWindow().hide();
+        DatabaseHandler dbHandler = new DatabaseHandler();
+
+        String first_name = signUpName.getText();
+        String last_name = signUpLastName.getText();
+        String login = login_field.getText();
+        String password = password_field.getText();
+
+        User user = new User(first_name, last_name, login, password);
+
+        dbHandler.signUpUser(user);
     }
 }

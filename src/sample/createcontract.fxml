@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CreateContractController">
+   <children>
+      <TextField fx:id="subject_name" layoutX="49.0" layoutY="93.0" prefHeight="25.0" prefWidth="176.0" promptText="Название субъекта" AnchorPane.bottomAnchor="620.0" />
+      <TextField fx:id="subject_tin" layoutX="49.0" layoutY="121.0" prefHeight="25.0" prefWidth="176.0" promptText="ИНН субъекта" AnchorPane.bottomAnchor="590.0" />
+      <TextField fx:id="subject_email" layoutX="49.0" layoutY="151.0" prefHeight="25.0" prefWidth="176.0" promptText="Электронный адрес" AnchorPane.bottomAnchor="560.0" />
+      <TextField fx:id="contract_details" layoutX="49.0" layoutY="181.0" prefHeight="25.0" prefWidth="176.0" promptText="Реквизиты договора" AnchorPane.bottomAnchor="530.0" />
+      <TextField fx:id="subject_of_the_contract" layoutX="49.0" layoutY="218.0" prefHeight="25.0" prefWidth="176.0" promptText="Предмет договора" AnchorPane.bottomAnchor="500.0" />
+      <TextField fx:id="contract_object" layoutX="49.0" layoutY="283.0" prefHeight="25.0" prefWidth="176.0" promptText="Объект договора" AnchorPane.bottomAnchor="470.0" />
+      <Button fx:id="registercontractButton" layoutX="767.0" layoutY="605.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="169.0" text="Завести дело">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Text layoutX="86.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Договор" wrappingWidth="95.13671875" AnchorPane.bottomAnchor="675.9765625">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="status" layoutX="49.0" layoutY="313.0" prefHeight="25.0" prefWidth="176.0" AnchorPane.bottomAnchor="440.0" />
+      <Label layoutX="56.0" layoutY="298.0" prefHeight="35.0" prefWidth="95.0" text="Статус дела" textFill="#000000f4">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="details_of_the_pretension" layoutX="278.0" layoutY="93.0" prefHeight="25.0" prefWidth="176.0" promptText="Реквизиты претензии" AnchorPane.bottomAnchor="650.0" AnchorPane.leftAnchor="278.0" AnchorPane.rightAnchor="570.0" />
+      <TextField fx:id="pretension_date" layoutX="278.0" layoutY="123.0" prefHeight="25.0" prefWidth="176.0" promptText="Дата направления претензии" />
+      <TextField fx:id="payment_term" layoutX="278.0" layoutY="153.0" prefHeight="25.0" prefWidth="176.0" promptText="Срок уплаты" />
+      <TextField fx:id="amount_payable" layoutX="278.0" layoutY="183.0" prefHeight="25.0" prefWidth="176.0" promptText="Сумма к уплате" AnchorPane.bottomAnchor="560.0" />
+      <Text layoutX="307.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Претензия" wrappingWidth="117.13671875">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="state_of_pretension" layoutX="278.0" layoutY="213.0" prefHeight="25.0" prefWidth="176.0" />
+      <Label layoutX="285.0" layoutY="208.0" prefHeight="35.0" prefWidth="141.0" text="Состояние претензии" textFill="#000000f4">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Text layoutX="556.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ИСК" wrappingWidth="52.13671875">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="type_of_claim" layoutX="504.0" layoutY="93.0" prefHeight="25.0" prefWidth="176.0" promptText="Вид иска" />
+      <TextField fx:id="a_sign_of_special_importance" layoutX="504.0" layoutY="123.0" prefHeight="25.0" prefWidth="176.0" promptText="Признак особой важности" />
+      <TextField fx:id="the_claim_filing_date" layoutX="504.0" layoutY="153.0" prefHeight="25.0" prefWidth="176.0" promptText="Дата подачи иска" />
+      <TextField fx:id="outgoing_number" layoutX="504.0" layoutY="183.0" prefHeight="25.0" prefWidth="176.0" promptText="Исходящий номер" AnchorPane.bottomAnchor="560.0" />
+      <ChoiceBox fx:id="state_of_claim" layoutX="504.0" layoutY="213.0" prefHeight="25.0" prefWidth="176.0" />
+      <Label layoutX="512.0" layoutY="208.0" prefHeight="35.0" prefWidth="141.0" text="Состояние иска" textFill="#000000f4">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Text layoutX="781.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="СУД" wrappingWidth="46.13671875">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="date_of_court_hearing" layoutX="734.0" layoutY="93.0" prefHeight="25.0" prefWidth="176.0" promptText="Дата судебного заседания" />
+      <TextField fx:id="court_name" layoutX="734.0" layoutY="123.0" prefHeight="25.0" prefWidth="176.0" promptText="Наименование суда" />
+      <TextField fx:id="court_number" layoutX="734.0" layoutY="153.0" prefHeight="25.0" prefWidth="176.0" promptText="Номер дела в суде" />
+      <TextField fx:id="full_name_of_judge" layoutX="734.0" layoutY="183.0" prefHeight="25.0" prefWidth="176.0" promptText="ФИО судьи" />
+      <TextField fx:id="note" layoutX="734.0" layoutY="303.0" prefHeight="25.0" prefWidth="176.0" promptText="Примечание" />
+      <TextField fx:id="the_courts_decision" layoutX="734.0" layoutY="243.0" prefHeight="25.0" prefWidth="176.0" promptText="Решение суда" />
+      <TextField fx:id="effective_date" layoutX="734.0" layoutY="273.0" prefHeight="25.0" prefWidth="176.0" promptText="Дата вступления в законную силу" />
+      <ChoiceBox fx:id="meeting_stage" layoutX="734.0" layoutY="213.0" prefHeight="25.0" prefWidth="176.0" />
+      <Label layoutX="740.0" layoutY="208.0" prefHeight="35.0" prefWidth="141.0" text="Стадия заседания" textFill="#000000f4">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="executor" layoutX="49.0" layoutY="93.0" prefHeight="25.0" prefWidth="176.0" promptText="Исполнитель" AnchorPane.bottomAnchor="650.0" />
+   </children>
+</AnchorPane>
